@@ -157,6 +157,7 @@ public:
 
 #endif // ENCRYPTION_H
 ```
+
 **Uno de los metodos a resonar es** `int charToAscii(char c);` debido a que gracias a la faciliad de convertir un caracte a codigo _ASCII_.
 
 ### Tema 5. Fases de un compilador
@@ -174,11 +175,93 @@ public:
 
 ### Tema 2. Diseño de ER.
 + **Aplicaiones:**
+1. [appExpRegLeer](https://github.com/moonligth-cb/appExpReg1.git)
+
+```java
+Sintaxis importante de esta aplicación:
+
+# Elaborada en NetBeans
+# Java [visual]
+
+## Alistar una pantalla:
+public void arbol() {
+    this.label1.setText("Arbol");
+    this.label2.setText("Maíz");
+    this.label3.setText("Brocolí");
+    this.labelImg.setIcon(new ImageIcon("src/images/bigs/arbol.png"));
+    this.panelArbol.setVisible(true);
+    this.btnSiguiente.setEnabled(false);
+    this.labelError.setVisible(false);
+    this.labelCorrecto.setVisible(false);
+}
+
+## Revisar una palabra:
+private void arbolRevisar() {
+    String cadena = this.textArbol.getText();
+    String regExpString = "[a-zA-Z]{5}";
+    Pattern pStr = Pattern.compile(regExpString);
+    Matcher mStr = pStr.matcher(cadena);
+    if (mStr.matches()) {
+        cadena = cadena.toLowerCase().strip();
+        if(!cadena.equals("arbol")){
+            this.labelError.setVisible(true);
+            this.labelError.setText("No es correcto :c");
+        } else {
+            this.btnSiguiente.setEnabled(true);
+            this.labelCorrecto.setVisible(true);
+            this.labelCorrecto.setText("Muy Bien!!");
+            this.textArbol.setEnabled(false);
+        }
+    } else {
+        this.labelError.setVisible(true);
+        this.labelError.setText("Faltan letras :c");
+    }
+}
+
+## Constructor del main menu:
+public MainMenu(String nombreUsuario) {
+    initComponents();
+    getContentPane().setBackground(new Color(88, 238, 252));
+    NOMBRE_USUARIO = nombreUsuario;
+    if (NOMBRE_USUARIO.length() >= 10) {
+        this.jLabel2.setFont(new Font("Comics Sans MS", 1, 30));
+    }
+    this.jLabel2.setText("Hola, " + NOMBRE_USUARIO + " Bienvenida(o) a [CUDI].");
+    Image icon = new ImageIcon(getClass().getResource("../images/logo.png")).getImage();
+    setIconImage(icon);
+}
+```
+
 + **Recursos Didacticos:**
 
 ### Tema 3. Aplicaciones en problemas reales. 
 + **Aplicaiones:**
-1. [app]()
+1. [appValidacionesSencillas](https://github.com/moonligth-cb/appExpReg2.git)
+
+```java
+Sintaxis importante de esta aplicación:
+
+# Elaborada en NetBeans
+# Java [visual]
+
+## Botón que evalua para ver si el NC es correcto:
+private void btnValidarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+    String nc = this.textNC.getText();
+    String regExpString = "^([1-2])([0-9])13([0-9]){4}";
+    Pattern pStr = Pattern.compile(regExpString);
+    Matcher mStr = pStr.matcher(nc);
+    if (mStr.matches()) {
+            this.labelError.setVisible(false);
+            this.labelCorrecto.setVisible(true);
+    } else {
+        this.labelError.setVisible(true);
+        this.labelCorrecto.setVisible(false);
+    }
+        
+}   
+
+```
+
 + **Recursos Didacticos:**
 
 
@@ -202,3 +285,4 @@ public:
 
 
 Strikethrough	~~The world is flat.~~
+
