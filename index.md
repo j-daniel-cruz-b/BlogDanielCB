@@ -111,6 +111,7 @@ int main()
 ```
 
 + **Recursos Didacticos:**
+
 ### Tema 2. Cadenas.
 + **Aplicaiones:**
 + **Recursos Didacticos:**
@@ -118,6 +119,7 @@ int main()
 ### Tema 3. Lenguajes, tipos y herramientas.
 + **Aplicaiones:**
 + **Recursos Didacticos:**
+
 ### Tema 4. Estructura de un traductor.
 
 + **Aplicaiones:**
@@ -160,6 +162,7 @@ public:
 ### Tema 5. Fases de un compilador
 + **Aplicaiones:**
 + **Recursos Didacticos:**
+
 ## Unidad 2. Expresiones Regulares. 
 1. Definición formal de una ER.
 2. Diseño de ER.
@@ -168,9 +171,11 @@ public:
 ### Tema 1. Definición formal de una ER.
 + **Aplicaiones:**
 + **Recursos Didacticos:**
+
 ### Tema 2. Diseño de ER.
 + **Aplicaiones:**
 + **Recursos Didacticos:**
+
 ### Tema 3. Aplicaciones en problemas reales. 
 + **Aplicaiones:**
 1. [app]()
@@ -197,4 +202,3 @@ public:
 
 
 Strikethrough	~~The world is flat.~~
-
