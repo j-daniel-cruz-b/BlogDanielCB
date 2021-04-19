@@ -1,2 +1,2 @@
-# Lenguajes y Automotas I
+## Lenguajes y Automotas I
 **by Daniel Cruz**
