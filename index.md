@@ -6,6 +6,14 @@
 2. Cadenas.
 3. Lenguajes, tipos y herramientas.
 4. Estructura de un traductor.
+5. Fases de un compilador
+
+### Tema 1. Alfabeto.
+
+### Tema 2. Cadenas.
+
+### Tema 3. Lenguajes, tipos y herramientas.
+### Tema 4. Estructura de un traductor.
 
 + **Aplicaiones:**
 1. [appCodificaciónGUI](https://github.com/moonligth-cb/appCodificacionGUI.git) 
@@ -44,11 +52,15 @@ public:
 ```
 **Uno de los metodos a resonar es** `int charToAscii(char c);` debido a que gracias a la faciliad de convertir un caracte a codigo _ASCII_.
 
-5. Fases de un compilador
-
+### Tema 5. Fases de un compilador
 ## Unidad 2. Expresiones Regulares. 
 1. Definición formal de una ER.
 2. Diseño de ER.
 3. Aplicaciones en problemas reales. 
+
+### Tema 1. Definición formal de una ER.
+
+### Tema 2. Diseño de ER.
+### Tema 3. Aplicaciones en problemas reales. 
 
 ## Contacto
